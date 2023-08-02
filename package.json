@@ -1,0 +1,46 @@
+{
+  "name": "@hebilicious/reproduire",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "Hebilicious/reproduire",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts",
+    "*.cjs",
+    "*.mjs"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache . --fix"
+  },
+  "devDependencies": {
+    "@hebilicious/eslint-config": "0.0.3-beta.1",
+    "@types/node": "^20.4.5",
+    "eslint": "^8.46.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6",
+    "unbuild": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "@actions/core": "1.10.0",
+    "@actions/github": "5.1.1"
+  }
+}
