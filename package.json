@@ -14,7 +14,7 @@
     "build": "unbuild && ncc build -o action",
     "lint": "eslint --cache .",
     "lint:fix": "eslint --cache . --fix",
-    "release": "changelogen --release"
+    "release": "pnpm lint:fix && changelogen --release"
   },
   "devDependencies": {
     "@hebilicious/eslint-config": "0.0.3-beta.1",
