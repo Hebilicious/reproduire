@@ -1,0 +1,15 @@
+name: Reproduire
+description: Comment on issues with an incomplete label.
+author: Hebilicious
+runs:
+  using: node16
+  main: action/index.cjs
+inputs: 
+  repo-token:
+    description: 'Token for the repository. Can be passed in using `{{ secrets.GITHUB_TOKEN }}`.'
+    required: false
+    default: ${{ github.token }}
+  label:
+    description: Label to apply to trigger Reproduire.
+    required: false
+    default: needs-reproduction

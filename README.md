@@ -1,10 +1,12 @@
 # Reproduire
 
 GitHub action that adds a custom message to incomplete issues.
+This action is intended to be in repositories where contributors needs to submit issues with a reproduction.
+It enables an automated message to be added to issues that are missing a reproduction, based on a defined label.
 
 ## Add a message when an issue is flagged as incomplete
 
-Setup the Reproduire action in your workflow :
+Setup the Reproduire action with a workflow file in your repository (e.g. `.github/workflows/reproduire.yml`) :
 
 ```yaml
 name: Reproduire
@@ -21,15 +23,15 @@ jobs:
     steps:
       - uses: Hebilicious/reproduire@v1
         with:
-          label: needs-reproduction
+          label: needs-reproduction # Optional, will default to this value.
 ```
 
 You can create a custom markdown message by creating a `.github/reproduire/needs-reproduction.md` in your repository.
 
 ## Automatically close incomplete issues
 
-You can use another action to automatically close the issue after a certain amount of time.
-Setup a [stale](https://github.com/actions/stale) action in your workflow to automatically close the issue with your label.
+You can use another action to automatically close labeled issues after a certain amount of time.
+Setup a [stale](https://github.com/actions/stale) action in your repository (e.g. `.github/workflows/reproduire-close.yml`) :
 
 ```yaml
 name: Close incomplete issues

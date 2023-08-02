@@ -1,6 +1,6 @@
-import * as github from "@actions/github"
-import * as core from "@actions/core"
-import { coreLog, getMessage, reproductionLabel } from "./utils"
+import { context } from "@actions/github"
+import { setFailed } from "@actions/core"
+import { coreLog, getClient, getMessage, reproductionLabel } from "./utils"
 
 async function main() {
   try {
@@ -11,7 +11,7 @@ async function main() {
         pull_request: pullRequest,
         label: { name: newLabel }
       }
-    } = github.context
+    } = context
 
     if (pullRequest || !issue?.body || !process.env.GITHUB_TOKEN) return
 
@@ -20,7 +20,7 @@ async function main() {
     if (![reproductionLabel].includes(newLabel) && !labels.includes(reproductionLabel))
       return coreLog("Not manually labeled or already labeled.")
 
-    const client = github.getOctokit(process.env.GITHUB_TOKEN).rest
+    const client = getClient()
     const issueCommon = { ...repo, issue_number: issue.number }
 
     if (newLabel === reproductionLabel) {
@@ -29,7 +29,7 @@ async function main() {
     }
   }
   catch (error) {
-    core.setFailed(error instanceof Error ? error.message : "Unknown error")
+    setFailed(error instanceof Error ? error.message : "Unknown error")
   }
 }
 
