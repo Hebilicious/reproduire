@@ -15,11 +15,6 @@ async function main() {
 
     if (pullRequest || !issue?.body) return coreLog("Not an issue or has no body.")
     if (newLabel !== reproductionLabel) return coreLog(`Issue was labeled \`${newLabel}\`.`)
-
-    const labels = issue.labels.map((l: any) => l.name) as string[]
-
-    if (reproductionLabel === newLabel && labels.includes(reproductionLabel)) return coreLog("Aready labeled.")
-
     const client = getClient()
     const issueCommon = { ...repo, issue_number: issue.number }
     await client.issues.createComment({ ...issueCommon, body: getMessage() })

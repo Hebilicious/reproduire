@@ -18,7 +18,7 @@ permissions:
   issues: write
 
 jobs:
-  inspect:
+  reproduire:
     runs-on: ubuntu-latest
     steps:
       - uses: Hebilicious/reproduire@v1

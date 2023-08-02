@@ -9828,7 +9828,7 @@ const node_url = __nccwpck_require__(1041);
 const actionName = "reproduire";
 const __filename$1 = node_url.fileURLToPath((typeof document === 'undefined' ? (__nccwpck_require__(7310).pathToFileURL)(__filename).href : (document.currentScript && document.currentScript.src || new URL('index.cjs', document.baseURI).href)));
 const __dirname$1 = node_path.dirname(__filename$1);
-const coreLog = (message) => core.info(`[${actionName}] : ${message}`);
+const coreLog = (message) => core.info(`[${actionName}]: ${message}`);
 const reproductionLabel = core.getInput("label") ?? "needs-reproduction";
 function getClient() {
   const token = core.getInput("repo-token") ?? process.env.GITHUB_TOKEN;
@@ -9856,9 +9856,6 @@ async function main() {
       return coreLog("Not an issue or has no body.");
     if (newLabel !== reproductionLabel)
       return coreLog(`Issue was labeled \`${newLabel}\`.`);
-    const labels = issue.labels.map((l) => l.name);
-    if (reproductionLabel === newLabel && labels.includes(reproductionLabel))
-      return coreLog("Aready labeled.");
     const client = getClient();
     const issueCommon = { ...repo, issue_number: issue.number };
     await client.issues.createComment({ ...issueCommon, body: getMessage() });

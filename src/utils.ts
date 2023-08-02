@@ -10,7 +10,7 @@ const actionName = "reproduire" as const
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-export const coreLog = (message: string) => info(`[${actionName}] : ${message}`)
+export const coreLog = (message: string) => info(`[${actionName}]: ${message}`)
 
 export const reproductionLabel = getInput("label") ?? "needs-reproduction"
 
