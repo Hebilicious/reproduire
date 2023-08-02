@@ -14,19 +14,16 @@ async function main() {
     } = context
 
     if (pullRequest || !issue?.body) return coreLog("Not an issue or has no body.")
+    if (newLabel !== reproductionLabel) return coreLog(`Issue was labeled \`${newLabel}\`.`)
 
     const labels = issue.labels.map((l: any) => l.name) as string[]
 
-    if (![reproductionLabel].includes(newLabel) && !labels.includes(reproductionLabel))
-      return coreLog("Not manually labeled or already labeled.")
+    if (reproductionLabel === newLabel && labels.includes(reproductionLabel)) return coreLog("Aready labeled.")
 
     const client = getClient()
     const issueCommon = { ...repo, issue_number: issue.number }
-
-    if (newLabel === reproductionLabel) {
-      await client.issues.createComment({ ...issueCommon, body: getMessage() })
-      return coreLog("Commented on issue, because it did not have a sufficient reproduction.")
-    }
+    await client.issues.createComment({ ...issueCommon, body: getMessage() })
+    return coreLog(`Commented on issue ${issue.number} because it has the label \`${reproductionLabel}\`.`)
   }
   catch (error) {
     setFailed(error instanceof Error ? error.message : "Unknown error")
