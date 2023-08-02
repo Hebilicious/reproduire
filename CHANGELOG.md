@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/Hebilicious/reproduire/compare/v0.0.4...v0.0.3)
+
+### 🚀 Enhancements
+
+- Improve logging and errors ([ad9beb0](https://github.com/Hebilicious/reproduire/commit/ad9beb0))
+
+### ❤️  Contributors
+
+- Hebilicious ([@Hebilicious](http://github.com/Hebilicious))
+
 ## v0.0.2
 
 [compare changes](https://github.com/Hebilicious/reproduire/compare/v0.0.1...v0.0.2)
