@@ -1,6 +1,9 @@
 name: Reproduire
 description: Comment on issues with an incomplete label.
 author: Hebilicious
+branding:
+  icon: "aperture"
+  color: green
 runs:
   using: node16
   main: action/index.cjs
