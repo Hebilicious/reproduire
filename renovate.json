@@ -1,5 +1,5 @@
 {
-    "extends": [
-      "github>Hebilicious/renovate-config"
-    ]
-  }
+  "extends": [
+    "github>Hebilicious/renovate-config"
+  ]
+}
