@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/Hebilicious/reproduire/compare/v0.0.6...v0.0.7)
+
+### 🚀 Enhancements
+
+- Run action on every matching label ([7258bf4](https://github.com/Hebilicious/reproduire/commit/7258bf4))
+
+### ❤️  Contributors
+
+- Hebilicious ([@Hebilicious](http://github.com/Hebilicious))
+
 ## v0.0.6
 
 [compare changes](https://github.com/Hebilicious/reproduire/compare/v0.0.4...v0.0.6)
