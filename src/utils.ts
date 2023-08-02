@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url"
 
 import { getOctokit } from "@actions/github"
 import { getInput, info } from "@actions/core"
+import { message } from "./message"
 
 const actionName = "reproduire" as const
 
@@ -21,7 +22,6 @@ export function getClient() {
 
 export function getMessage() {
   const userPath = join(process.env.GITHUB_WORKSPACE ?? "", ".github", actionName, "needs-reproduction.md")
-  const defaultPath = join(__dirname, "./messages/needs-reproductions.md")
   if (existsSync(userPath)) return readFileSync(userPath, "utf8")
-  return readFileSync(defaultPath, "utf8")
+  return message
 }

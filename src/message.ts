@@ -1,6 +1,6 @@
-We cannot recreate the issue with the provided information. **Please add a reproduction in order for us to be able to investigate.**
+export const message = /* md */`We cannot recreate the issue with the provided information. **Please add a reproduction in order for us to be able to investigate.**
 
-### **Why was this issue marked with the `needs-reproduction` label?**
+### **Why was this issue marked with the \`needs-reproduction\` label?**
 
 To be able to investigate, we need access to a reproduction to identify what triggered the issue. Please provide a link to either :
 
@@ -16,7 +16,7 @@ Ensure the link is pointing to a codebase that is accessible (e.g. not a private
 
 ### **What happens if I don't provide a sufficient minimal reproduction?**
 
-Issues with the `needs-reproduction` label that receives no meaningful activity (e.g. new comments with a reproduction link) will be closed by the maintainers and won't be looked at.
+Issues with the \`needs-reproduction\` label that receives no meaningful activity (e.g. new comments with a reproduction link) will be closed by the maintainers and won't be looked at.
 
 ### **I did not open this issue, but it is relevant to me, what can I do to help?**
 
@@ -41,4 +41,4 @@ We will review it and reopen the issue if it is sufficient.
 ### **Useful Resources**
 
 - [Why reproductions are required](https://antfu.me/posts/why-reproductions-are-required)
-- [How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve)
+- [How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve)`
