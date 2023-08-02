@@ -2,7 +2,7 @@ name: Reproduire
 description: Comment on issues with an incomplete label.
 author: Hebilicious
 branding:
-  icon: "aperture"
+  icon: aperture
   color: green
 runs:
   using: node16
