@@ -13,7 +13,7 @@ async function main() {
       }
     } = context
 
-    if (pullRequest || !issue?.body || !process.env.GITHUB_TOKEN) return
+    if (pullRequest || !issue?.body) return coreLog("Not an issue or has no body.")
 
     const labels = issue.labels.map((l: any) => l.name) as string[]
 
