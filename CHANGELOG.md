@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/Hebilicious/reproduire/compare/v0.0.1...v0.0.2)
+
+### 🏡 Chore
+
+- Add branding ([d82e7bd](https://github.com/Hebilicious/reproduire/commit/d82e7bd))
+- Lint ([6af82c5](https://github.com/Hebilicious/reproduire/commit/6af82c5))
+- Add lint-staged ([a328462](https://github.com/Hebilicious/reproduire/commit/a328462))
+
+### ❤️  Contributors
+
+- Hebilicious ([@Hebilicious](http://github.com/Hebilicious))
+
 ## v0.0.1
 
 
