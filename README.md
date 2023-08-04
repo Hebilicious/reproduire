@@ -52,6 +52,7 @@ jobs:
         with:
           days-before-stale: -1 # Issues and PR will never be flagged stale automatically.
           stale-issue-label: needs-reproduction # Label that flags an issue as stale.
+          only-labels: needs-reproduction # Only process these issues
           days-before-issue-close: 7
           ignore-updates: true
           remove-stale-when-updated: false
