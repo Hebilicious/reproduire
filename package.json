@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "Hebilicious/reproduire",
   "private": true,
-  "packageManager": "pnpm@8.6.11",
+  "packageManager": "pnpm@8.7.1",
   "main": "./dist/index.cjs",
   "files": [
     "dist",
@@ -17,15 +17,15 @@
     "release": "pnpm lint:fix && pnpm build && git add action/index.cjs && changelogen --release --push"
   },
   "devDependencies": {
-    "@hebilicious/eslint-config": "0.0.3-beta.1",
-    "@types/node": "^20.4.5",
+    "@hebilicious/eslint-config": "0.0.3-beta.3",
+    "@types/node": "^20.5.8",
     "@vercel/ncc": "^0.36.1",
-    "changelogen": "^0.5.4",
-    "eslint": "^8.46.0",
-    "lint-staged": "^13.2.3",
+    "changelogen": "^0.5.5",
+    "eslint": "^8.48.0",
+    "lint-staged": "^13.3.0",
     "simple-git-hooks": "^2.9.0",
-    "typescript": "^5.1.6",
-    "unbuild": "^2.0.0-rc.0"
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0"
   },
   "dependencies": {
     "@actions/core": "1.10.0",
