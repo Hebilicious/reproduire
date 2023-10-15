@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "Hebilicious/reproduire",
   "private": true,
-  "packageManager": "pnpm@8.9.0",
+  "packageManager": "pnpm@8.9.1",
   "main": "./dist/index.cjs",
   "files": [
     "dist",
