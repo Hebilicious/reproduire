@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "Hebilicious/reproduire",
   "private": true,
-  "packageManager": "pnpm@8.14.0",
+  "packageManager": "pnpm@8.14.1",
   "main": "./dist/index.cjs",
   "files": [
     "dist",
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@hebilicious/eslint-config": "0.0.3-beta.3",
-    "@types/node": "^20.10.7",
+    "@types/node": "^20.11.1",
     "@vercel/ncc": "^0.38.1",
     "changelogen": "^0.5.5",
     "eslint": "^8.56.0",
