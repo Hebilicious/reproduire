@@ -23,7 +23,7 @@
     "changelogen": "^0.5.5",
     "eslint": "^8.57.0",
     "lint-staged": "^14.0.1",
-    "simple-git-hooks": "^2.11.0",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.4.3",
     "unbuild": "^2.0.0"
   },
