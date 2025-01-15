@@ -17,8 +17,8 @@ devDependencies:
     specifier: 0.0.3-beta.3
     version: 0.0.3-beta.3(eslint@8.57.1)(typescript@5.7.3)
   '@types/node':
-    specifier: ^20.17.12
-    version: 20.17.12
+    specifier: ^20.17.13
+    version: 20.17.13
   '@vercel/ncc':
     specifier: ^0.38.3
     version: 0.38.3
@@ -1124,8 +1124,8 @@ packages:
       '@types/unist': 2.0.7
     dev: true
 
-  /@types/node@20.17.12:
-    resolution: {integrity: sha512-vo/wmBgMIiEA23A/knMfn/cf37VnuF52nZh5ZoW0GWt4e4sxNquibrMRJ7UQsA06+MBx9r/H1jsI9grYjQCQlw==}
+  /@types/node@20.17.13:
+    resolution: {integrity: sha512-RNf+4dEeV69PIvyp++4IKM2vnLXtmp/JovfeQm5P5+qpKb6wHoH7INywLdZ7z+gVX46kgBP/fwJJvZYaHxtdyw==}
     dependencies:
       undici-types: 6.19.8
     dev: true
