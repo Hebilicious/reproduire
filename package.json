@@ -21,7 +21,7 @@
     "@types/node": "^22.13.17",
     "@vercel/ncc": "^0.38.3",
     "changelogen": "^0.6.1",
-    "eslint": "^8.57.1",
+    "eslint": "^9.24.0",
     "lint-staged": "^15.5.0",
     "simple-git-hooks": "^2.12.1",
     "typescript": "^5.8.2",
