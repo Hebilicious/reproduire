@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "Hebilicious/reproduire",
   "private": true,
-  "packageManager": "pnpm@10.9.0",
+  "packageManager": "pnpm@10.10.0",
   "main": "./dist/index.cjs",
   "files": [
     "dist",
@@ -18,12 +18,12 @@
   },
   "devDependencies": {
     "@hebilicious/eslint-config": "0.0.3-beta.3",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.3",
     "@vercel/ncc": "^0.38.3",
     "changelogen": "^0.6.1",
     "eslint": "^8.57.1",
     "lint-staged": "^15.5.1",
-    "simple-git-hooks": "^2.12.1",
+    "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3",
     "unbuild": "^3.5.0"
   },
