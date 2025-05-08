@@ -18,18 +18,18 @@
   },
   "devDependencies": {
     "@hebilicious/eslint-config": "0.0.3-beta.3",
-    "@types/node": "^22.15.3",
+    "@types/node": "^22.15.16",
     "@vercel/ncc": "^0.38.3",
     "changelogen": "^0.6.1",
     "eslint": "^8.57.1",
-    "lint-staged": "^15.5.1",
+    "lint-staged": "^15.5.2",
     "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3",
     "unbuild": "^3.5.0"
   },
   "dependencies": {
     "@actions/core": "1.11.1",
-    "@actions/github": "6.0.0"
+    "@actions/github": "6.0.1"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
