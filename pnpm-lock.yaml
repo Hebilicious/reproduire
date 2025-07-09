@@ -19,8 +19,8 @@ importers:
         specifier: 0.0.3-beta.3
         version: 0.0.3-beta.3(eslint@8.57.1)(typescript@5.8.3)
       '@types/node':
-        specifier: ^22.16.0
-        version: 22.16.0
+        specifier: ^22.16.2
+        version: 22.16.2
       '@vercel/ncc':
         specifier: ^0.38.3
         version: 0.38.3
@@ -657,8 +657,8 @@ packages:
   '@types/mdast@3.0.15':
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
 
-  '@types/node@22.16.0':
-    resolution: {integrity: sha512-B2egV9wALML1JCpv3VQoQ+yesQKAmNMBIAY7OteVrikcOcAkWm+dGL6qpeCktPjAv6N1JLnhbNiqS35UpFyBsQ==}
+  '@types/node@22.16.2':
+    resolution: {integrity: sha512-Cdqa/eJTvt4fC4wmq1Mcc0CPUjp/Qy2FGqLza3z3pKymsI969TcZ54diNJv8UYUgeWxyb8FSbCkhdR6WqmUFhA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2864,7 +2864,7 @@ snapshots:
     dependencies:
       '@types/unist': 2.0.11
 
-  '@types/node@22.16.0':
+  '@types/node@22.16.2':
     dependencies:
       undici-types: 6.21.0
 
@@ -2942,7 +2942,7 @@ snapshots:
       debug: 4.4.1
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.7.1
+      semver: 7.7.2
       tsutils: 3.21.0(typescript@5.8.3)
     optionalDependencies:
       typescript: 5.8.3
@@ -2957,7 +2957,7 @@ snapshots:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
-      semver: 7.7.1
+      semver: 7.7.2
       ts-api-utils: 1.4.3(typescript@5.8.3)
     optionalDependencies:
       typescript: 5.8.3
@@ -2974,7 +2974,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.8.3)
       eslint: 8.57.1
       eslint-scope: 5.1.1
-      semver: 7.7.1
+      semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -2988,7 +2988,7 @@ snapshots:
       '@typescript-eslint/types': 6.21.0
       '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.8.3)
       eslint: 8.57.1
-      semver: 7.7.1
+      semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3414,7 +3414,7 @@ snapshots:
   eslint-compat-utils@0.5.1(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
-      semver: 7.7.1
+      semver: 7.7.2
 
   eslint-compat-utils@0.6.4(eslint@8.57.1):
     dependencies:
@@ -3481,7 +3481,7 @@ snapshots:
       is-glob: 4.0.3
       minimatch: 3.1.2
       resolve: 1.22.10
-      semver: 7.7.1
+      semver: 7.7.2
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-typescript
@@ -4675,7 +4675,7 @@ snapshots:
       espree: 9.6.1
       esquery: 1.6.0
       lodash: 4.17.21
-      semver: 7.7.1
+      semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
 
