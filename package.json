@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@hebilicious/eslint-config": "0.0.3-beta.3",
-    "@types/node": "^22.18.0",
+    "@types/node": "^22.18.1",
     "@vercel/ncc": "^0.38.3",
     "changelogen": "^0.6.2",
     "eslint": "^8.57.1",
