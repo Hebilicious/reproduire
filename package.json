@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "Hebilicious/reproduire",
   "private": true,
-  "packageManager": "pnpm@10.28.1",
+  "packageManager": "pnpm@10.28.2",
   "main": "./dist/index.cjs",
   "files": [
     "dist",
@@ -28,7 +28,7 @@
     "unbuild": "^3.6.1"
   },
   "dependencies": {
-    "@actions/core": "2.0.2",
+    "@actions/core": "2.0.3",
     "@actions/github": "7.0.0"
   },
   "simple-git-hooks": {
