@@ -24,7 +24,7 @@
     "eslint": "^8.57.1",
     "lint-staged": "^16.4.0",
     "simple-git-hooks": "^2.13.1",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.2",
     "unbuild": "^3.6.1"
   },
   "dependencies": {
