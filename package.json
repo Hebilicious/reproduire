@@ -18,11 +18,11 @@
   },
   "devDependencies": {
     "@hebilicious/eslint-config": "0.0.3-beta.3",
-    "@types/node": "^24.12.3",
+    "@types/node": "^24.12.4",
     "@vercel/ncc": "^0.38.4",
     "changelogen": "^0.6.2",
     "eslint": "^8.57.1",
-    "lint-staged": "^17.0.3",
+    "lint-staged": "^17.0.4",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^6.0.3",
     "unbuild": "^3.6.1"
