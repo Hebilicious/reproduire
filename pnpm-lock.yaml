@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  undici: 8.9.0
+
 importers:
 
   .:
@@ -268,10 +271,6 @@ packages:
   '@eslint/js@8.57.1':
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-
-  '@fastify/busboy@2.1.1':
-    resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
-    engines: {node: '>=14'}
 
   '@hebilicious/eslint-config@0.0.3-beta.3':
     resolution: {integrity: sha512-gNBhOsE1ac1ECEnWBET/IRcbxnIkpJ/qYicTeyzGH20ENP15ApgadaZ6YCD5PTbQ8CcOlYMU/9bSxycDah6sqA==}
@@ -2053,13 +2052,9 @@ packages:
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
-  undici@5.28.5:
-    resolution: {integrity: sha512-zICwjrDrcrUE0pyyJc1I2QzBkLM8FINsgOrt6WjA+BgajVq9Nxu2PbFFXUrAggLfDXlZGZBVZYw7WNV5KiBiBA==}
-    engines: {node: '>=14.0'}
-
-  undici@6.23.0:
-    resolution: {integrity: sha512-VfQPToRA5FZs/qJxLIinmU59u0r7LXqoJkCzinq3ckNJp3vKEh7jTWN589YQ5+aoAC/TGRLyJLCPKcLQbM8r9g==}
-    engines: {node: '>=18.17'}
+  undici@8.9.0:
+    resolution: {integrity: sha512-aWZpUj7XoGonMClx4gdDRfgBjqeA+F473aDmROQQbM9n6PRfK/u1q/a0X4wMTgcHfT8H6fpbt98PFuDUwFg2YA==}
+    engines: {node: '>=22.19.0'}
 
   unist-util-stringify-position@2.0.3:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
@@ -2140,17 +2135,17 @@ snapshots:
       '@octokit/plugin-rest-endpoint-methods': 10.4.1(@octokit/core@5.2.0)
       '@octokit/request': 8.4.1
       '@octokit/request-error': 5.1.1
-      undici: 5.28.5
+      undici: 8.9.0
 
   '@actions/http-client@3.0.1':
     dependencies:
       tunnel: 0.0.6
-      undici: 5.28.5
+      undici: 8.9.0
 
   '@actions/http-client@3.0.2':
     dependencies:
       tunnel: 0.0.6
-      undici: 6.23.0
+      undici: 8.9.0
 
   '@actions/io@2.0.0': {}
 
@@ -2345,8 +2340,6 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.1': {}
-
-  '@fastify/busboy@2.1.1': {}
 
   '@hebilicious/eslint-config@0.0.3-beta.3(eslint@8.57.1)(typescript@6.0.3)':
     dependencies:
@@ -4193,11 +4186,7 @@ snapshots:
 
   undici-types@7.18.2: {}
 
-  undici@5.28.5:
-    dependencies:
-      '@fastify/busboy': 2.1.1
-
-  undici@6.23.0: {}
+  undici@8.9.0: {}
 
   unist-util-stringify-position@2.0.3:
     dependencies:
