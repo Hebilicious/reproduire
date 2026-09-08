@@ -22,7 +22,7 @@
     "@vercel/ncc": "^0.45.0",
     "changelogen": "^0.6.2",
     "eslint": "^8.57.1",
-    "lint-staged": "^17.4.1",
+    "lint-staged": "^17.5.0",
     "simple-git-hooks": "^2.14.0",
     "typescript": "^6.0.3",
     "unbuild": "^3.6.1"
